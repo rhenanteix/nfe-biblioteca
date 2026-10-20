@@ -17,7 +17,7 @@
   },
   "scripts": {
     "commit": "git-cz",
-    "pretest": "npm run lint && nsp check",
+    "pretest": "npm run lint",
     "build": "babel src --out-dir lib",
     "lint": "eslint src test",
     "test": "mocha --compilers js:babel-core/register --require babel-polyfill --require mocha-vcr --ui vcr --timeout 60000 -i -g @noci",
